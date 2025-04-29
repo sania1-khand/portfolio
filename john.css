@@ -352,6 +352,7 @@ nav {
     grid-template-columns: 1fr; /* Ek column */
   }
 }
+
 /* About Section */
 .about-section {
     background-color: #f8f9fa;
