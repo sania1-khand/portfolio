@@ -160,6 +160,10 @@ nav {
     color: var(--primary-color);
 }
 
+ .nav-links a:hover {
+     background-color:#2980b9;
+ }
+
 .nav-links a i {
     font-size: 0.9rem;
 }
@@ -278,6 +282,76 @@ nav {
    box-shadow: #3498db;
 }
 
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  /* Navbar ke links vertical ho jayein */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Section padding adjust */
+  section {
+    padding: 20px 15px;
+  }
+
+  /* Headings aur paragraphs font size adjust */
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Skills section grid adjustment */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns on mobile */
+    gap: 10px;
+  }
+
+  /* Projects ko center aur width adjust karna */
+  .project-card {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  /* Contact form width full karna */
+  form {
+    width: 100%;
+  }
+
+  /* Images responsive banani */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Extra small devices (mobiles) ke liye */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  nav ul {
+    font-size: 18px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr; /* Ek column */
+  }
+}
 /* About Section */
 .about-section {
     background-color: #f8f9fa;
