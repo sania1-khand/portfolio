@@ -414,6 +414,22 @@ animateRole();
             this.reset();
         });
     }
+
+        // Mobile menu toggle
+const menuBtn = document.querySelector('.menu-btn');
+const navbarUl = document.querySelector('.navbar ul');
+const navLinks = document.querySelectorAll('.navbar ul li a');
+
+menuBtn.addEventListener('click', () => {
+    navbarUl.classList.toggle('active');
+});
+
+// Close menu when clicking a link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navbarUl.classList.remove('active');
+    });
+});
     /* Update the script.js to include current year */
 document.getElementById('year').textContent = new Date().getFullYear();
 });
