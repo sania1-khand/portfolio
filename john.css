@@ -281,6 +281,15 @@ nav {
    margin-bottom: 300px 300px;
    box-shadow: #3498db;
 }
+/* Mobile screen ke liye hamburger sahi place mein */
+@media (max-width: 768px) {
+  .hamburger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1000; /* upar lane ke liye */
+  }
+}
 
 /* Mobile Responsive Design */
 @media (max-width: 768px) {
