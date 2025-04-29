@@ -1077,6 +1077,58 @@ footer {
     }
 }
 
+/* ==================== HAMBURGER MENU FIXES ==================== */
+@media (max-width: 768px) {
+    /* Hide desktop menu on mobile */
+    .navbar ul {
+        display: none;
+    }
+    
+    /* Show mobile menu when active */
+    .navbar ul.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: #0b0b13;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        padding: 0;
+    }
+    
+    /* Style menu items */
+    .navbar ul.active li {
+        margin: 1.5rem 0;
+    }
+    
+    .navbar ul.active li a {
+        font-size: 2rem;
+        padding: 1rem 2rem;
+    }
+    
+    /* Hamburger button styles */
+    .menu-btn {
+        display: block !important;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        font-size: 3rem;
+        cursor: pointer;
+        z-index: 1000;
+        color: #fff;
+        transition: 0.3s;
+    }
+    
+    .menu-btn.active {
+        color: #0ef;
+        transform: rotate(90deg);
+    }
+}
+
 @media (max-width: 768px) {
     .footer-text p {
         font-size: 1.2rem !important;
