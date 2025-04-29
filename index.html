@@ -464,6 +464,26 @@ document.addEventListener('click', (e) => {
         menuBtn.innerHTML = '☰';
     }
 });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.addEventListener('click', function() {
+        // Toggle menu
+        navLinks.classList.toggle('active');
+        // Animate hamburger
+        hamburger.classList.toggle('active');
+    });
+    
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-links li a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+        });
+    });
+});
     /* Update the script.js to include current year */
 document.getElementById('year').textContent = new Date().getFullYear();
 });
