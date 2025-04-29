@@ -282,7 +282,7 @@ nav {
    box-shadow: #3498db;
 }
 /* Mobile screen ke liye hamburger sahi place mein */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .hamburger {
     position: absolute;
     top: 15px;
